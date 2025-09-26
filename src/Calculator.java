@@ -11,10 +11,13 @@ public class Calculator {
         return a * b;
     }
 
-    public double divide(int a, int b) {
-    if (b == 0) throw new ArithmeticException("Cannot divide by zero");
+  public double divide(int a, int b) {
+    if (b == 0) {
+        throw new ArithmeticException("Cannot divide by zero");
+    }
     return (double) a / b;
 }
+
 public int modulus(int a, int b) {
     if (b == 0) throw new ArithmeticException("Cannot modulus by zero");
     return a % b;
